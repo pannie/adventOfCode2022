@@ -45,7 +45,6 @@ public class Main {
                     default -> throw new RuntimeException();
 
                 })
-                .peek(p -> System.out.println(": " + p))
                 .sum();
 
         System.out.println("sum star1: " + result1);
@@ -76,7 +75,6 @@ public class Main {
                     default -> throw new RuntimeException();
 
                 })
-                .peek(p -> System.out.println(": " + p))
                 .sum();
 
         System.out.println("sum star2: " + result2);
