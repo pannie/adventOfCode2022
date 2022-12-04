@@ -22,7 +22,6 @@ public class Main {
 
         var result1 = input.stream()
                 .map (game -> game.split(" "))
-                .peek(p -> System.out.print(Arrays.asList(p)))
                 .mapToInt(game -> switch(game[1]) {
                         case "X" -> 1 + switch (game[0]) {
                             case "A" -> 3;
@@ -52,7 +51,6 @@ public class Main {
 
         var result2 = input.stream()
                 .map (game -> game.split(" "))
-                .peek(p -> System.out.print(Arrays.asList(p)))
                 .mapToInt(game -> switch(game[1]) {
                     case "X" -> switch (game[0]) {
                         case "A" -> 3;
